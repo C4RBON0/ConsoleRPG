@@ -1,14 +1,10 @@
-using namespace std;
-#include <iostream>
-#include <vector>
-#include <cstdlib>
-#include "header.h"
+#ifndef CHARACTERS_H
+#define CHARACTERS_H
 
-class Characters{
+class Characters {
 
-    //Attributes
     private:
-        
+
         string name;
         int health;
         int armour;
@@ -24,12 +20,9 @@ class Characters{
 
         int money;
 
-    //Functions
     public:
 
-        int dado(int caras){
-            int total = rand()%caras+1;
-            return total;
-        }
-
+        int dados(int caras);
 };
+
+#endif
