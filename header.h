@@ -20,7 +20,7 @@ class Characters {
 
     public:
 
-        int dados(int caras);
+        int dado(int caras);
 };
 
 #endif
