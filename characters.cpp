@@ -7,7 +7,7 @@ using namespace std;
 class Characters{
 
     //Attributes
-    private:
+    public:
         
         string name;
         int health;
@@ -19,8 +19,6 @@ class Characters{
         int intelligence;
         int wisdom;
         int charm;
-
-        vector<float> inventory[10];
 
         int money;
 
