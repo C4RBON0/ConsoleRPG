@@ -214,6 +214,12 @@ class Characters{
             cout << "Wisdom:        " << wisdom<< " + " << pluswisdom << endl;
             cout << "Charm:         " << charm << " + " << pluscharm<< endl;
         }
+
+        void randomstats(){
+            initiative = dado(20);
+            armour = dado(20);
+            health = dado(20);
+        }
         
 
 };
@@ -278,7 +284,7 @@ int main(){
                 int t1 = hero.dado(20) + hero.pluscharm;
                 if(t1 > 10){
                     cout << "You seduced that man, he is now in love with you." << endl;
-                    cout << "He gave you something before desapearing... ";
+                    cout << "He gave you something before desapearing ... ";
                     int g1 = hero.dado(50);
                     cout << g1 << " gold coins";
                     hero.money += g1;
